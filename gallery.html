@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hyderabad Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gallery section */
+.gallery-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Gallery heading */
+.gallery-container h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.gallery-container h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e74c3c;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Gallery grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Individual gallery item */
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery images */
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Image captions */
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .gallery-container {
+        padding: 15px;
+    }
+
+    .gallery-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History & Culture of Hyderabad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History & Culture</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="food.html">Food Spots</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="parks.html">Parks</a></li>
+                <li><a href="religious-sites.html">Religious Sites</a></li>
+                <li><a href="transport.html">Transport</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="gallery-container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvkW1_fAi28Wm9EFGGvhayUqvOIpbLZCniQ&s" alt="Pakka Qila">
+            <p>Pakka Qila</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/1c/df/64/bombay-bakery-hyderabad.jpg" alt="Bombay Bakery">
+            <p>Bombay Bakery</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN4-NH7fhU79zQwNA_gchGq1dByL4cKADXeEtNL=s680-w680-h510" alt="Charminar">
+            <p>Charminar</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.worldatlas.com/r/w768/upload/4b/fb/72/shutterstock-6792205961.jpg" alt="Indus River">
+            <p>Indus River</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://guidetopakistan.pk/wp-content/uploads/2021/10/lakeview-2.jpg" alt="Lake View">
+            <p>Lake View</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFyhYQbYrgQFQXoz0MxjmzDXcT5ptviVckIA&s" alt="Museum">
+            <p>Hyderabad Museum</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ7qcVT3sPQVC4g7SMpRwwSpaCsBukfO7Qrw&s" alt="Historical Site">
+            <p>Historical Site</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPNydPMPgNuMPa5ZBgh7rDxUTCz7eI18cSA&s" alt="Hyderabad Street Food">
+            <p>Street Food</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_e_iTyfxX8Hxp_1HgI-uGqWJVsmpFsmxwRntsbflFoZYUdrr_i2JU-aoeo5E_o8EY12w&usqp=CAU" alt="Public Park">
+            <p>Public Park</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_46xRwvws3zOtAAFgjvL17xIuJe1WBtIhQQ&s" alt="Beautiful Mosque">
+            <p>Beautiful Mosque</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5mM_n51RYTKiYzWl0KL3jr8FR2UAYvswQw&s" alt="Cultural Festival">
+            <p>Cultural Festival</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/Antique-Market-Hyderabad_20180406143706.jpg" alt="Traditional Bazaar">
+            <p>Traditional Bazaar</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://prestinetravels.com/wp-content/uploads/2023/01/Hyderabad-Sindh-Pakistan.jpg" alt="University of Sindh">
+            <p>University of Sindh</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdktksEZ4rAwqyjxKpYN-c5nbmjp7k_HMCOw&s" alt="Library">
+            <p>Library</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.iied.org/sites/default/files/styles/scale_md/public/images/2015/08/13/Karachitransport%20web_0.jpg" alt="Transport">
+            <p>Transport</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-Qfu7mKf9Q8hV8hduniFBchBi2_ngFZx2w&s" alt="Transport">
+            <p>Navalrai Clock tower</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Hyderabad Tourism Guide | Explore the Past, Embrace the Culture</p>
+</footer>
+
+</body>
+</html>

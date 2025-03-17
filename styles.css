@@ -1,0 +1,437 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: fadeInImage 2s ease-in-out forwards;
+}
+
+/* Hero Text */
+.hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Black box */
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 1s;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffc107;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff9800;
+}
+
+
+/* Top Attractions */
+.featured {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.item {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+/* Testimonials */
+.testimonials {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: #ffc107;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .socials a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+/* Attractions Page */
+.attractions {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractions h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Individual Attraction */
+.attraction {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.attraction:hover {
+    transform: scale(1.02);
+}
+
+.attraction img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* shopping section */
+.shopping-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.shopping-section h2 {
+    font-size: 2rem;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+
+/* Shopping Card */
+.shopping-item {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shopping-item:hover {
+    transform: scale(1.05);
+}
+
+.shopping-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* Image Gallery */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.gallery .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Parks Page Styling */
+body.card-page {
+    background-color: #eef7f6;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Section */
+.card-section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-section h2 {
+    color: #008080;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Park Cards */
+.card {
+    background: #d1f2eb;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: #a3e4d7;
+}
+
+.card h3 {
+    color: #006666;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* Images */
+.card img {
+    display: block;
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Fade-in Animations */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attraction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .attraction img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .details {
+        padding: 15px;
+    }
+}

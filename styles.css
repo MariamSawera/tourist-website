@@ -462,8 +462,14 @@ body.card-page {
     }
 
     .menu-icon {
-        display: block; /* Show hamburger menu */
+        display: block; /* Show the menu icon */
+        position: absolute;
+        top: 30px;  /* Adjust based on your navbar height */
+        right: 20px; /* Push it to the right */
+        font-size: 2rem;
+        cursor: pointer;
     }
+    
 
     nav ul {
         display: none; /* Hide menu initially */
